@@ -40,7 +40,7 @@ public class ArrayList<T> implements List<T> {
         }
         if (size == capacity) {
             capacity *= 2;
-            T[] temp = (T[]) new Comparable[capacity];
+            T[] temp = (T[]) new Object[capacity];
             System.arraycopy(list, 0, temp, 0, size);
             list = temp;
         }
