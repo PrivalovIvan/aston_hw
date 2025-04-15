@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.27.xsd">
+
+    <changeSet id="006-create-table-books_genres" author="ivanprivalov">
+        <createTable tableName="books_genres" schemaName="personal_book_library">
+            <column name="book_id" type="uuid">
+                <constraints nullable="false" foreignKeyName="fk_bookgenres_book"
+                             referencedTableSchemaName="personal_book_library"
+                             referencedTableName="catalog_books"
+                             referencedColumnNames="id"/>
+            </column>
+            <column name="genre_id" type="uuid">
+                <constraints nullable="false" foreignKeyName="fk_bookgenres_genre"
+                             referencedTableSchemaName="personal_book_library"
+                             referencedTableName="genres"
+                             referencedColumnNames="id"/>
+            </column>
+        </createTable>
+        <addPrimaryKey tableName="books_genres" columnNames="book_id, genre_id"
+                       schemaName="personal_book_library"/>
+    </changeSet>
+
+</databaseChangeLog>

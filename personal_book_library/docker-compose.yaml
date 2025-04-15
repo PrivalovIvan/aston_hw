@@ -1,0 +1,15 @@
+services:
+  postgres:
+    image: postgres:15
+    container_name: personal_book_library
+    environment:
+      POSTGRES_DB: personal_book_library_db
+      POSTGRES_USER: ivan
+      POSTGRES_PASSWORD: secret
+    ports:
+      - "5433:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

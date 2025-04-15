@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.27.xsd">
+
+    <changeSet id="007-insert_authors" author="ivanprivalov">
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Лев Толстой"/>
+            <column name="country" value="Россия"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Фёдор Достоевский"/>
+            <column name="country" value="Россия"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Джордж Оруэлл"/>
+            <column name="country" value="Великобритания"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Скот Фицжеральд"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Харпер Ли"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Джейн Остин"/>
+            <column name="country" value="Великобритания"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Джером Д. Сэлинджер"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Габриэль Гарсиа Маркес"/>
+            <column name="country" value="Колумбия"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Марк Твен"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Джон Стейнбек"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Эрнест Хемингуэй"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Франц Кафка"/>
+            <column name="country" value="Австрия"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Гарпер Ли"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Джон Грин"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Джоджо Мойес"/>
+            <column name="country" value="Великобритания"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Стивен Кинг"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Джордж Мартин"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Джон Р. Р. Толкин"/>
+            <column name="country" value="Великобритания"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Кен Кизи"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Кэтрин Стокетт"/>
+            <column name="country" value="США"/>
+        </insert>
+        <insert tableName="authors" schemaName="personal_book_library">
+            <column name="name" value="Джоджо Мойес"/>
+            <column name="country" value="Великобритания"/>
+        </insert>
+
+    </changeSet>
+
+</databaseChangeLog>

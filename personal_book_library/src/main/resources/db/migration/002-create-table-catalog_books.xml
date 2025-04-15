@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.27.xsd">
+
+    <changeSet id="002-create-table-catalog_books" author="ivanprivalov">
+        <createTable tableName="catalog_books" schemaName="personal_book_library">
+            <column name="id" type="uuid" defaultValueComputed="gen_random_uuid()">
+                <constraints primaryKey="true" nullable="false"/>
+            </column>
+            <column name="title" type="varchar(255)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="publication_year" type="integer">
+                <constraints nullable="false"/>
+            </column>
+            <column name="author_id" type="uuid">
+                <constraints nullable="false" foreignKeyName="fk_book_author"
+                             referencedTableSchemaName="personal_book_library"
+                             referencedTableName="authors"
+                             referencedColumnNames="id"/>
+            </column>
+        </createTable>
+        <createIndex tableName="catalog_books" schemaName="personal_book_library" indexName="idx_books_id" unique="true">
+            <column name="id"/>
+        </createIndex>
+    </changeSet>
+
+</databaseChangeLog>
