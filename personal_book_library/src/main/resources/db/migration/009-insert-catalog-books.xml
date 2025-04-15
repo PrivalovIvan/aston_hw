@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.27.xsd">
+
+    <changeSet id="009-insert_catalog_books" author="ivanprivalov">
+        <insert tableName="catalog_books" schemaName="personal_book_library">
+            <column name="author_id" valueComputed="gen_random_uuid()"/>
+            <column name="title" value="Война и мир"/>
+            <column name="publication_year" valueComputed="1869"/>
+            <column name="author_id" valueComputed="
+            (SELECT id FROM personal_book_library.authors WHERE name = 'Лев Толстой' LIMIT 1)"/>
+        </insert>
+        <insert tableName="books_genres" schemaName="personal_book_library">
+            <column name="book_id"
+                    valueComputed="(SELECT id FROM personal_book_library.catalog_books WHERE title = 'Война и мир' LIMIT 1)"/>
+            <column name="genre_id"
+                    valueComputed="(SELECT id FROM personal_book_library.genres WHERE name = 'Роман' LIMIT 1)"/>
+        </insert>
+        <insert tableName="books_genres" schemaName="personal_book_library">
+            <column name="book_id"
+                    valueComputed="(SELECT id FROM personal_book_library.catalog_books WHERE title = 'Война и мир' LIMIT 1)"/>
+            <column name="genre_id"
+                    valueComputed="(SELECT id FROM personal_book_library.genres WHERE name = 'Genre Test' LIMIT 1)"/>
+        </insert>
+
+        <insert tableName="catalog_books" schemaName="personal_book_library">
+            <column name="author_id" valueComputed="gen_random_uuid()"/>
+            <column name="title" value="Преступление и наказание"/>
+            <column name="publication_year" valueComputed="1866"/>
+            <column name="author_id" valueComputed="
+            (SELECT id FROM personal_book_library.authors WHERE name = 'Фёдор Достоевский' LIMIT 1)"/>
+        </insert>
+        <insert tableName="books_genres" schemaName="personal_book_library">
+            <column name="book_id"
+                    valueComputed="(SELECT id FROM personal_book_library.catalog_books WHERE title = 'Преступление и наказание' LIMIT 1)"/>
+            <column name="genre_id"
+                    valueComputed="(SELECT id FROM personal_book_library.genres WHERE name = 'Роман' LIMIT 1)"/>
+        </insert>
+
+        <insert tableName="catalog_books" schemaName="personal_book_library">
+            <column name="author_id" valueComputed="gen_random_uuid()"/>
+            <column name="title" valueComputed="1984"/>
+            <column name="publication_year" valueComputed="1949"/>
+            <column name="author_id" valueComputed="
+            (SELECT id FROM personal_book_library.authors WHERE name = 'Джордж Оруэлл' LIMIT 1)"/>
+        </insert>
+        <insert tableName="books_genres" schemaName="personal_book_library">
+            <column name="book_id"
+                    valueComputed="(SELECT id FROM personal_book_library.catalog_books WHERE title = '1984' LIMIT 1)"/>
+            <column name="genre_id"
+                    valueComputed="(SELECT id FROM personal_book_library.genres WHERE name = 'Антиутопия' LIMIT 1)"/>
+        </insert>
+
+
+        <insert tableName="catalog_books" schemaName="personal_book_library">
+            <column name="author_id" valueComputed="gen_random_uuid()"/>
+            <column name="title" value="Великий Гэтсби"/>
+            <column name="publication_year" valueComputed="1925"/>
+            <column name="author_id" valueComputed="
+            (SELECT id FROM personal_book_library.authors WHERE name = 'Скот Фицжеральд' LIMIT 1)"/>
+        </insert>
+        <insert tableName="books_genres" schemaName="personal_book_library">
+            <column name="book_id"
+                    valueComputed="(SELECT id FROM personal_book_library.catalog_books WHERE title = 'Великий Гэтсби' LIMIT 1)"/>
+            <column name="genre_id"
+                    valueComputed="(SELECT id FROM personal_book_library.genres WHERE name = 'Роман' LIMIT 1)"/>
+        </insert>
+
+        <insert tableName="catalog_books" schemaName="personal_book_library">
+            <column name="author_id" valueComputed="gen_random_uuid()"/>
+            <column name="title" value="Убить пересмешника"/>
+            <column name="publication_year" valueComputed="1960"/>
+            <column name="author_id" valueComputed="
+            (SELECT id FROM personal_book_library.authors WHERE name = 'Харпер Ли' LIMIT 1)"/>
+        </insert>
+        <insert tableName="books_genres" schemaName="personal_book_library">
+            <column name="book_id"
+                    valueComputed="(SELECT id FROM personal_book_library.catalog_books WHERE title = 'Убить пересмешника' LIMIT 1)"/>
+            <column name="genre_id"
+                    valueComputed="(SELECT id FROM personal_book_library.genres WHERE name = 'Роман' LIMIT 1)"/>
+        </insert>
+        <insert tableName="catalog_books" schemaName="personal_book_library">
+            <column name="author_id" valueComputed="gen_random_uuid()"/>
+            <column name="title" value="Гордость и предубеждение"/>
+            <column name="publication_year" valueComputed="1813"/>
+            <column name="author_id" valueComputed="
+            (SELECT id FROM personal_book_library.authors WHERE name = 'Джейн Остин' LIMIT 1)"/>
+        </insert>
+        <insert tableName="books_genres" schemaName="personal_book_library">
+            <column name="book_id"
+                    valueComputed="(SELECT id FROM personal_book_library.catalog_books WHERE title = 'Гордость и предубеждение' LIMIT 1)"/>
+            <column name="genre_id"
+                    valueComputed="(SELECT id FROM personal_book_library.genres WHERE name = 'Роман' LIMIT 1)"/>
+        </insert>
+
+        <insert tableName="catalog_books" schemaName="personal_book_library">
+            <column name="author_id" valueComputed="gen_random_uuid()"/>
+            <column name="title" value="Над пропастью во ржи"/>
+            <column name="publication_year" valueComputed="1951"/>
+            <column name="author_id" valueComputed="
+            (SELECT id FROM personal_book_library.authors WHERE name = 'Джером Д. Сэлинджер' LIMIT 1)"/>
+        </insert>
+        <insert tableName="books_genres" schemaName="personal_book_library">
+            <column name="book_id"
+                    valueComputed="(SELECT id FROM personal_book_library.catalog_books WHERE title = 'Над пропастью во ржи' LIMIT 1)"/>
+            <column name="genre_id"
+                    valueComputed="(SELECT id FROM personal_book_library.genres WHERE name = 'Роман' LIMIT 1)"/>
+        </insert>
+    </changeSet>
+</databaseChangeLog>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+        https://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-4.27.xsd">
+
+    <changeSet id="008-insert_genres" author="ivanprivalov">
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Роман"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Классика"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Антиутопия"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Фантастика"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Детектив"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Научная литература"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Поэзия"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Фэнтези"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Приключения"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Исторический роман"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Современная проза"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Биография"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Автобиография"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Эссе"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Публицистика"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Сказка"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Мифология"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Легенда"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Сказание"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Литература для детей"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Литература для подростков"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Комиксы"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Графические романы"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по саморазвитию"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по психологии"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по бизнесу"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по финансам"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по маркетингу"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по менеджменту"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по лидерству"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по продажам"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по личной эффективности"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по личной финансовой грамотности"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по личной безопасности"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по личной гигиене"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по личной культуре"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по личной этике"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Книги по личной эстетике"/>
+        </insert>
+        <insert tableName="genres" schemaName="personal_book_library">
+            <column name="name" value="Genre Test"/>
+        </insert>
+    </changeSet>
+
+</databaseChangeLog>
